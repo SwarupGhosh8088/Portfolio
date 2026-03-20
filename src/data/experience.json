@@ -2,28 +2,28 @@
   {
     "id": 1,
     "duration": "Jan 2025 - Present",
-    "role": "Frontend Developer Intern",
-    "company": "Tech Solutions Pvt. Ltd.",
-    "status": "Ongoing",
-    "location": "Kolkata, India",
-    "description": "Building responsive web applications using React and Tailwind CSS."
+    "role": "",
+    "company": "",
+    "status": "",
+    "location": "",
+    "description": ""
   },
   {
     "id": 2,
-    "duration": "Jun 2024 - Dec 2024",
-    "role": "Web Developer Intern",
-    "company": "Creative Minds Studio",
-    "status": "Completed",
-    "location": "Bangalore, India",
-    "description": "Developed UI components and integrated APIs for client projects."
+    "duration": "",
+    "role": "",
+    "company": "",
+    "status": "",
+    "location": "",
+    "description": ""
   },
   {
     "id": 3,
     "duration": "Jan 2024 - May 2024",
-    "role": "IT Support Trainee",
-    "company": "Global Tech Services",
-    "status": "Completed",
-    "location": "Hyderabad, India",
-    "description": "Provided IT support and managed internal tools for employees."
+    "role": "",
+    "company": "",
+    "status":"",
+    "location": "",
+    "description": ""
   }
 ]

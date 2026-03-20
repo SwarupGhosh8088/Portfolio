@@ -5,7 +5,7 @@ const Projects = ({darkMode}) => {
     <div id="projects" className={`py-16 px-6 ${darkMode ?"bg-black text-white":"bg-white text-black"}`}>
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-4xl font-bold mb-10 border-b-2 border-yellow-400 inline-block">
+        <h2 className="text-2xl font-bold mb-10 border-b-2 border-yellow-400 inline-block">
           Projects
         </h2>
 

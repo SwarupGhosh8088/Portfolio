@@ -5,13 +5,15 @@ import linkdin from "../../../assets/linkedin.png";
 import youtube from "../../../assets/youtube.png";
 import github from "../../../assets/github.png";
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
+
+  const bg = darkMode ? "bg-black text-white" : "bg-white text-gray-900";
   return (
-    <div className="p-10 flex  justify-around items-center">
+    <div className={`${bg} p-10 flex  justify-around items-center`}>
       <div className="flex flex-col gap-5">
         <img src={anime} className="rounded  w-90  h-80  " alt="" />
 
-        <div className="flex justify-center items-center gap-12 p-4 gap-4 hover:rounded-3xl">
+        <div className="flex justify-center items-center  p-4 gap-4 hover:rounded-3xl">
           <a href="https://www.instagram.com/swarupghosh04">
             <img
               src={hero}
@@ -43,7 +45,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <form className="flex flex-col rounded gap-2 bg-neutral-900  h-130 w-120 mt-15  item-center justify-center p-5">
+      <form className={`flex flex-col rounded gap-2 ${darkMode ? "bg-neutral-900 text-white" : "bg-mist-300 text-gray-900"}  h-130 w-120 mt-15  item-center justify-center p-5`}>
         <label className="text-white mb-10 -4 font-bold text-2xl text-center font-inter">
           Work With Our Team
         </label>

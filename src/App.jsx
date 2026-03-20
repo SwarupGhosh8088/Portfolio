@@ -28,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home darkMode={darkMode} />} />
         <Route path="/cp" element={<Cp />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact darkMode={darkMode} />} />
       </Routes>
     </>
   );
