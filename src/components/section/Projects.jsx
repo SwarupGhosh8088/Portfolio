@@ -2,7 +2,7 @@ import projects from "../../data/project.json";
 
 const Projects = () => {
   return (
-    <div id="projects" className="py-16 px-6 bg-gray-950 text-white">
+    <div id="projects" className="py-16 px-6 text-white">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-10 border-b-2 border-yellow-400 inline-block">
@@ -14,7 +14,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-neutral-900 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
+              className="bg-gray-950 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
             >
               <img
                 src={project.image}
