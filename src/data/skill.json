@@ -7,8 +7,8 @@
   { "name": "TypeScript", "image": "/typescript.png" },
 
   { "name": "Node.js", "image": "/node.png" },
-  { "name": "Express", "image": "/express.png" },
-  { "name": "MongoDB", "image": "/mongodb.png" },
+  { "name": "Express", "image": "/Express.png" },
+  { "name": "MongoDB", "image": "/MongoDb.png" },
 
   { "name": "C", "image": "/c.png" },
   { "name": "C++", "image": "/c++.png" },
@@ -16,5 +16,5 @@
 
   { "name": "VS Code", "image": "/vs.png" },
   { "name": "Git", "image": "/git.png" },
-  { "name": "LeetCode", "image": "/leetcode.png" }
+  { "name": "LeetCode", "image": "/lee.png" }
 ]
