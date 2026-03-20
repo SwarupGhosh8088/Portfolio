@@ -11,7 +11,7 @@ import Skills from "./Skill";
 
 const Home = ({ darkMode }) => {
   return (
-    <div className={`flex flex-col ${darkMode ? "bg-black" : "bg-white"}`}>
+    <div className={`flex flex-col  ${darkMode ? "bg-black" : "bg-white"} ${darkMode ? "text-white":"text-black"}`}>
       <div className="flex flex-col sm:flex-row h-screen items-center lg:px-16  lg:gap-10 ">
         {/* LEFT-SOCIAL ICONS */}
         <div className="flex flex-col gap-10 mr-20 mt-20">
@@ -107,11 +107,11 @@ const Home = ({ darkMode }) => {
 
       {/* Education */}
       <br />
-      <Education />
+      <Education darkMode={darkMode} />
       <br />
-      <Skills />
+      <Skills  darkMode={darkMode}/>
       <br />
-      <Projects />
+      <Projects darkMode={darkMode} />
     </div>
   );
 };

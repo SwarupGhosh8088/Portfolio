@@ -1,14 +1,14 @@
 import React from "react";
 import skill from "../../data/skill.json";
 
-const Skills = () => {
+const Skills = ({darkMode}) => {
   return (
-    <div id="skills" className=" bg-black text-white pb-10">
+    <div id="skills" className={`${darkMode ?"bg-black text-white":"bg-white text-black"} pb-10`} >
       {/* Heading */}
       <div className="" id="skill">
         <h2 className="text-2xl font-bold  mb-15 ml-15">
           Skills
-          <div className="bg-amber-50  h-0.5 w-40  mt-2"></div>
+          <div className="bg-amber-500  h-0.5 w-40  mt-2"></div>
         </h2>
       </div>
 
@@ -20,7 +20,7 @@ const Skills = () => {
         {skill.map((item, index) => (
           <div
             key={index}
-            className="bg-gray-900 p-6 rounded-xl text-center  shadow-lg h-20 w-20"
+            className={` p-6 rounded-xl text-center  shadow-lg h-20 w-20 ${darkMode ?" bg-gray-900 text-white":"border-r-indigo-100 text-black"} pb-10`}
           >
             <img
               src={item.image}

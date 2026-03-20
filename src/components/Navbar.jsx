@@ -5,7 +5,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <div
       className={`p-6 h-15 w-full flex justify-between items-center fixed top-0   shadow-2xl ${
-        darkMode ? "bg-gray-900 text-white" : "bg-cyan-50 text-black"
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
       {" "}

@@ -1,8 +1,8 @@
 import projects from "../../data/project.json";
 
-const Projects = () => {
+const Projects = ({darkMode}) => {
   return (
-    <div id="projects" className="py-16 px-6 text-white">
+    <div id="projects" className={`py-16 px-6 ${darkMode ?"bg-black text-white":"bg-white text-black"}`}>
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-10 border-b-2 border-yellow-400 inline-block">
@@ -14,7 +14,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-950 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300"
+              className={ `rounded-xl overflow-hidden shadow-lg hover:scale-105 transition duration-300 ${darkMode ?"bg-black text-white":"bg-white shadow-gray-300  border-b-gray-800 text-black"}`}
             >
               <img
                 src={project.image}

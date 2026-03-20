@@ -31,7 +31,8 @@ const Education = () => {
           <div className="flex flex-col justify-around">
             {educationData.map((edu) => (
               <div
-                className="flex bg-gray-900 flex-col rounded-lg w-80 p-4 ml-9"
+                className="  flex bg-gray-900 flex-col rounded-lg w-80 p-4 ml-9"
+
                 key={edu.id}
               >
                 <h3 className="text-xl ml-10 font-semibold">{edu.level}</h3>
