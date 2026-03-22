@@ -6,10 +6,17 @@ import Projects from "./components/section/Projects";
 import Loading from "./components/Loading";
 import Cp from "./components/section/Navtabs/Cp";
 import { useState, useEffect } from "react";
+import typeSound from "../public/typing.wav";
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [loading, setLoading] = useState(true);
+
+  
+    const audio = new Audio(typeSound);
+    
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,7 +25,15 @@ function App() {
   }, []);
 
   if (loading) {
-    return <Loading />;
+    return(
+      <>
+        <Loading />
+        audio.play();
+        
+      </>
+     
+
+    ) 
   }
 
   return (

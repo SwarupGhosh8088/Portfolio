@@ -8,18 +8,18 @@ import clickSound from "../../public/click.wav"
 
 const Navbar = ({ darkMode, setDarkMode }) => {
 
-  const playSound = () => {
+
+  function playSound() {
     const audio = new Audio(clickSound);
     audio.play();
   };
 
-  <button onClick={playSound}>Click Me</button>
 
   const [open, setOpen] = useState(false);
 
   return (
     <div
-      className={`p-4 md:p-6 w-full flex justify-between items-center fixed top-0 shadow-2xl ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
+      className={` p-2 w-full flex justify-between items-center fixed top-0 shadow-2xl  ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
         }`}
     >
       {/* Logo */}
@@ -42,7 +42,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             setDarkMode(!darkMode);
             playSound();
           }}
-
           className="h-10 w-10 rounded-full text-blue-50"
         >
           {darkMode ? (
