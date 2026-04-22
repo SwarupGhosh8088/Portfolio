@@ -18,12 +18,12 @@ const Education = ({ darkMode }) => {
       <div className="flex flex-col md:flex-row md:justify-between gap-6">
 
         {/* Education */}
-        <div className="flex flex-col gap-5 flex-1 ml-30">
+        <div className="flex flex-col gap-5 flex-1 ml-30 ">
           <h3 className="text-xl font-semibold ml-5">Education</h3>
           {educationData.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col p-1 rounded-xl ${cardBg} shadow-sm hover:shadow-md transition-shadow duration-200 w-100`}
+              className={`flex flex-col p-3 rounded-xl ${cardBg} shadow-sm hover:shadow-md transition-shadow duration-200 w-100`}
             >
               <p className="text-sm text-gray-400">{item.duration}</p>
               <p className="font-medium">{item.level}</p>
@@ -35,7 +35,7 @@ const Education = ({ darkMode }) => {
         </div>
 
         {/* Experience */}
-        <div className="flex flex-col gap-4 flex-1">
+        {/* <div className="flex flex-col gap-4 flex-1">
           <h3 className="text-xl font-semibold mb-2 ml-5">Experience</h3>
           {experienceData.map((item, index) => (
             <div
@@ -50,7 +50,7 @@ const Education = ({ darkMode }) => {
               <p className="text-gray-500 mt-1 text-sm">{item.description}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

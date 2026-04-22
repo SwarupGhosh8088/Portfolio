@@ -1,5 +1,4 @@
 import React from "react";
-import typeSound from "../../public/typing.wav";
 
 const Loading = () => {
 
