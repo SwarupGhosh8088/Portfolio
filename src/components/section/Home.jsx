@@ -2,7 +2,7 @@ import hero from "../../assets/hero.png";
 import linkdin from "../../assets/linkedin.png";
 import youtube from "../../assets/youtube.png";
 import github from "../../assets/github.png";
-import profile from "../../assets/dp.jpeg";
+import profile from "../../assets/Screenshot 2026-04-19 215459.png";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import favi from "../../../public/favi.jpeg"
 import Projects from "./Projects";
