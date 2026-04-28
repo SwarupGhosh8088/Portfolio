@@ -13,7 +13,8 @@ const Home = ({ darkMode }) => {
   return (
     <div className={`flex flex-col  ${darkMode ? "bg-black" : "bg-white"} ${darkMode ? "text-white":"text-black"}`}>
       <div className="flex flex-col sm:flex-row h-screen items-center lg:px-16  lg:gap-10 ">
-        {/* LEFT-SOCIAL ICONS */}
+   
+   
         <div className="flex flex-col gap-10 mr-20 mt-20">
           <div className="flex  lg:flex-col lg:gap-2   gap-8  ">
             <a className="transform transition-all hover:scale-110" href="/">
