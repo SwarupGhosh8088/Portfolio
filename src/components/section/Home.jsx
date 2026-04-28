@@ -104,7 +104,7 @@ const Home = ({ darkMode }) => {
         </div>
         <br />
       </div>
-
+      
       {/* Education */}
       <br />
       <Education darkMode={darkMode} />

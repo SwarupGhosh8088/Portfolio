@@ -8,7 +8,6 @@ import Cp from "./components/section/Navtabs/Cp";
 import { useState, useEffect } from "react";
 import typeSound from "../public/typing.wav";
 
-
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [loading, setLoading] = useState(true);
@@ -38,7 +37,9 @@ function App() {
 
   return (
     <>
+   
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+
 
       <Routes>
         <Route path="/" element={<Home darkMode={darkMode} />} />
