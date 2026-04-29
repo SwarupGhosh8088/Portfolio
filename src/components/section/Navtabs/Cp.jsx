@@ -3,7 +3,14 @@ import leetimg from "../../../../public/leetimg.png"
 import { GitHubCalendar } from "react-github-calendar";
 import { href } from "react-router-dom";
 
-const Cp = () => {
+const Cp = ({ darkMode }) => {
+
+  const bg = darkMode ? "bg-black text-white" : "bg-white text-gray-900";
+  const cardBg = darkMode ? "bg-neutral-900" : "bg-gray-100";
+  const inputBg = darkMode ? "bg-neutral-800 text-white" : "bg-white text-black";
+  const labelText = darkMode ? "text-gray-300" : "text-gray-700";
+
+
   const [repos, setRepos] = useState([]);
   const [lcData, setLcData] = useState(null);
   const [loadingRepos, setLoadingRepos] = useState(true);
@@ -31,23 +38,23 @@ const Cp = () => {
 
 
   return (
-    <div className="max-w-5xl mx-auto p-6  mt-15 text-white space-y-10">
+    <div className={` ${bg}  mx-auto p-6  mt-13 text-white space-y-10`}>
 
       {/* LeetCode Section */}
-      <div className="bg-zinc-900  rounded-2xl shadow-lg flex  gap-4 items-center justify-center m-4 p-1">
+      <div className={` ${bg} rounded-2xl shadow-lg flex  gap-4 items-center justify-center m-4 p-1 border`}>
         <div className="flex flex-col gap-4 items-center justify-center">
-          <h2 className="text-2xl font-semibold mb-4 ml-84  ">LeetCode</h2>
+          <h2 className="text-2xl font-semibold mb-4 ml-84  mt-5 ">LeetCode</h2>
           <img className="w-100 md-100 rounded-xl mb-4"
             src="https://leetcard.jacoblin.cool/SwarupGhosh726?theme=dark&ext=heatmap" />
         </div>
 
         {/*left*/}
-        <div className="flex justify-center items-center py-10">
-          <div className="bg-gray-900 text-white rounded-2xl shadow-xl p-6 w-[320px] text-center hover:scale-105 transition-all duration-300">
+        <div className={` ${bg}flex justify-center items-center py-10`}>
+          <div className="bg-black border-1 text-white rounded-2xl shadow-xl p-6 w-[320px] text-center hover:scale-105 transition-all duration-300">
             
             <h2 className="text-2xl font-semibold mb-2">LeetCode Profile</h2>
 
-            <p className="text-gray-400 mb-4">
+            <p className={` ${cardBg}text-gray-400 mb-4`}>
               Username: <span className="text-green-400 font-medium">SwarupGhosh726</span>
             </p>
 
@@ -55,7 +62,7 @@ const Cp = () => {
               href="https://leetcode.com/u/SwarupGhosh726/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-green-500 hover:bg-green-600 text-black font-semibold px-5 py-2 rounded-xl transition"
+              className={` ${bg}inline-block bg-green-500 hover:bg-green-600 text-black font-semibold px-5 py-2 rounded-xl transition`}
             >
               Visit Profile
             </a>
@@ -67,7 +74,7 @@ const Cp = () => {
       </div>
 
       {/*  GitHub Section */}
-      <div className="bg-zinc-900 p-6 rounded-2xl shadow-lg g-2  flex flex-col gap-4 items-center justify-center">
+      <div className={` ${bg} p-4 rounded-2xl shadow-lg g-2  flex flex-col gap-4 items-center justify-center border-1`}>
         <h2 className="text-2xl font-semibold mb-4 items-center">GitHub</h2>
 
         <img
@@ -92,7 +99,7 @@ const Cp = () => {
             {repos.map(repo => (
               <div
                 key={repo.id}
-                className="bg-zinc-800 p-4 rounded-xl hover:bg-zinc-700 transition"
+                className={` ${bg} p-4 rounded-xl hover:bg-zinc-700 transition border-1`}
               >
                 <h4 className="font-semibold text-lg">{repo.name}</h4>
                 <p className="text-sm text-gray-400 mb-2">

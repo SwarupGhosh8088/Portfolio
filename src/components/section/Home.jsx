@@ -8,6 +8,8 @@ import favi from "../../../public/favi.jpeg"
 import Projects from "./Projects";
 import Education from "./Education";
 import Skills from "./Skill";
+import Footer from "./Footer";
+
 
 const Home = ({ darkMode }) => {
   return (
@@ -113,6 +115,8 @@ const Home = ({ darkMode }) => {
       <Skills  darkMode={darkMode}/>
       <br />
       <Projects darkMode={darkMode} />
+      <br />
+      <Footer />
     </div>
   );
 };

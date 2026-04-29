@@ -13,7 +13,7 @@ const Contact = ({ darkMode }) => {
 
   return (
     <div className={`${bg} p-10 flex justify-around items-center flex-wrap gap-10 mt-12`}>
-      
+
       {/*Left Section */}
       <div className="flex flex-col gap-5 items-center">
         <img src={anime} className="rounded-xl w-80 h-72 object-cover" alt="profile" />
@@ -36,7 +36,7 @@ const Contact = ({ darkMode }) => {
 
       {/* Form Section */}
       <form className={`flex flex-col rounded-xl gap-3 ${cardBg} w-[400px] p-6 shadow-lg`}>
-        
+
         <h2 className="text-2xl font-bold text-center mb-4">
           Contact Me
         </h2>
@@ -65,7 +65,10 @@ const Contact = ({ darkMode }) => {
           className={`p-2 rounded-lg border h-32 resize-none ${inputBg}`}
         />
 
-        <button className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-xl flex items-center justify-center gap-2 mt-3 transition">
+        <button
+          onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=someone@gmail.com?subject=Hello&body=I%20want%20to%20connect%20with%20you", "_blank")}
+          className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-xl flex items-center justify-center gap-2 ml-17 mt-3 w-50 transition"
+        >
           <span className="font-semibold">Send Message</span>
           <FaUserPlus />
         </button>
