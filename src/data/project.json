@@ -16,10 +16,10 @@
     "live": "https://bondstartup.netlify.app/"
   },
   {
-    "name": "Devloping",
-    "image": "/devloping.png",
-    "description": "Development project with React & Tailwind",
-    "tech": ["React", "Tailwind"],
+    "name": "Campus Radius",
+    "image": "/campus.png",
+    "description": "A Marketplace  Platform where college student can rent/sell their Goods",
+    "tech": ["React", "Tailwind","Express","MongoDB","Multer","Node"],
     "github": "#",
     "live": "#"
   }
