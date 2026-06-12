@@ -21,6 +21,6 @@
     "description": "A Marketplace  Platform where college student can rent/sell their Goods",
     "tech": ["React", "Tailwind","Express","MongoDB","Multer","Node"],
     "github": "#",
-    "live": "#"
+    "live": "https://campusradius.netlify.app/ "
   }
 ]
