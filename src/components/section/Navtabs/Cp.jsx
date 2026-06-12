@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Fade from "../../Fade";
 
 const Cp = () => {
   const [repos, setRepos] = useState([]);
@@ -40,6 +41,7 @@ const Cp = () => {
   }, []);
 
   return (
+    <Fade>
     <div className="max-w-5xl mx-auto p-6  mt-15 text-white space-y-10">
 
       {/* LeetCode Section */}
@@ -118,6 +120,7 @@ const Cp = () => {
       </div>
 
     </div>
+    </Fade>
   );
 };
 

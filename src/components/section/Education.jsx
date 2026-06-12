@@ -11,19 +11,19 @@ const Education = ({ darkMode }) => {
       {/* Section Header */}
       <h2 className="text-2xl font-bold mb-6 relative inline-block p-5">
         Education & Experience
-        <span className="absolute left-0 bottom-0 h-0.5 w-86 ml-5 bg-amber-500 rounded-full"></span>
+        <span className="absolute left-0 bottom-0 h-0.5 w-70 ml-5 bg-amber-500 rounded-full"></span>
       </h2>
 
       {/* Container */}
       <div className="flex flex-col md:flex-row md:justify-between gap-6">
 
         {/* Education */}
-        <div className="flex flex-col gap-5 flex-1 ml-30 ">
+        <div className="flex flex-col gap-5 flex-1 md:ml-30 ">
           <h3 className="text-xl font-semibold ml-5">Education</h3>
           {educationData.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col p-3 rounded-xl ${cardBg} shadow-sm hover:shadow-md transition-shadow duration-200 w-100`}
+              className={`flex flex-col p-3 rounded-xl ${cardBg} shadow-sm hover:shadow-md transition-shadow duration-200 md:w-100`}
             >
               <p className="text-sm text-gray-400">{item.duration}</p>
               <p className="font-medium">{item.level}</p>

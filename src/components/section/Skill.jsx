@@ -6,7 +6,7 @@ const Skills = ({darkMode}) => {
     <div id="skills" className={`${darkMode ?"bg-black text-white":"bg-white text-black"} pb-10`} >
       {/* Heading */}
       <div className="" id="skill">
-        <h2 className="text-2xl font-bold  mb-15 ml-15">
+        <h2 className="text-2xl font-bold  mb-15 ml-10">
           Skills
           <div className="bg-amber-500  h-0.5 w-40  mt-2"></div>
         </h2>
@@ -16,7 +16,7 @@ const Skills = ({darkMode}) => {
         Things Help Me Build My Stuffs
       </h1>
       {/* Skills Grid */}
-      <div className="flex  flex-wrap justify-center items-center gap-15 p-10">
+      <div className=" grid grid-cols-3 gap-8 m-5 p-2 md:flex  flex-wrap justify-center items-center md:gap-15 md:p-10">
         {skill.map((item, index) => (
           <div
             key={index}

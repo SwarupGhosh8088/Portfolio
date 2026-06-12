@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <div
-      className={` p-2 w-full flex justify-between items-center fixed top-0 shadow-xl  ${
+      className={` z-1 p-2 w-full flex justify-between items-center fixed top-0 shadow-xl  ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
@@ -28,7 +28,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex gap-8">
+      <div className="hidden md:flex  gap-8">
         <Link to="/" className="hover:text-blue-400">
           Home
         </Link>
@@ -76,7 +76,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       {/* Mobile Menu */}
       {open && (
         <div
-          className={`absolute top-16 left-0 w-full flex flex-col items-center gap-6 py-6 ${
+          className={`absolute top-12 left-0 w-full flex flex-col items-center gap-6 py-6 ${
             darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
           } md:hidden`}
         >

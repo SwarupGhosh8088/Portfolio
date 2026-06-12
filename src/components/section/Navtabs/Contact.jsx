@@ -4,6 +4,9 @@ import hero from "../../../assets/hero.png";
 import linkdin from "../../../assets/linkedin.png";
 import youtube from "../../../assets/youtube.png";
 import github from "../../../assets/github.png";
+import Fade from "../../Fade";
+
+
 
 const Contact = ({ darkMode }) => {
   const bg = darkMode ? "bg-black text-white" : "bg-white text-gray-900";
@@ -12,11 +15,12 @@ const Contact = ({ darkMode }) => {
   const labelText = darkMode ? "text-gray-300" : "text-gray-700";
 
   return (
+    <Fade>
     <div className={`${bg} p-10 flex justify-around items-center flex-wrap gap-10 mt-12`}>
       
       {/*Left Section */}
-      <div className="flex flex-col gap-5 items-center">
-        <img src={anime} className="rounded-xl w-80 h-72 object-cover" alt="profile" />
+      <div className=" flex flex-col gap-5 items-center">
+        <img src={anime} className=" hidden md:block rounded-xl w-80 h-72 object-cover" alt="profile" />
 
         <div className="flex justify-center items-center p-4 gap-4">
           <a href="https://www.instagram.com/swarupghosh04">
@@ -71,6 +75,7 @@ const Contact = ({ darkMode }) => {
         </button>
       </form>
     </div>
+  </Fade>
   );
 };
 
