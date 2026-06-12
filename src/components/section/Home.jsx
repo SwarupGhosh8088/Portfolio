@@ -160,11 +160,11 @@ const Home = ({ darkMode }) => {
         <div className="flex flex-col     ">
 
 
-          <div className=" flex items-center ml-4 " >
+          <div className=" flex items-center ml-8 gap-4 " >
 
 
 
-            <div className=" flex flex-col  gap-2  hover:rounded-3xl">
+            <div className=" flex flex-col  gap-2   items-center hover:rounded-3xl">
               <a href="https://www.instagram.com/swarupghosh04">
                 <img
                   src={hero}
@@ -199,7 +199,7 @@ const Home = ({ darkMode }) => {
             <img
               src={profile}
               alt="profile"
-              className="rounded-full bg-white m-11 w-60  h-60"
+              className="rounded-full bg-white m-5 w-60  h-60"
             />
 
           </div>
