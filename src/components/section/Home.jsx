@@ -160,7 +160,7 @@ const Home = ({ darkMode }) => {
         <div className="flex flex-col     ">
 
 
-          <div className=" flex items-center ml-8 gap-4 " >
+          <div className=" flex items-center ml-6 gap-4 " >
 
 
 
